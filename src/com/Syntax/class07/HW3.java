@@ -7,15 +7,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Wait {
+public class HW3 {
     public static void main(String[] args) {
+        /*1.Goto https://syntaxprojects.com/dynamic-elements-loading.php
+          2.Click on start button
+          3. get the text Welcome Syntax technologies and print on console
+          -the text will be Empty
+          -write down whatever the reason you understand  of text being empty after exploring DOM   */
+
         // set the path to the driver to link it with our class    on mac u dont need .exe on windows u need .exe
         System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
         // create a WebDriver instance
         WebDriver driver=new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         //go to https://syntaxprojects.com/dynamic-elements-loading.php
         driver.get("https://syntaxprojects.com/dynamic-elements-loading.php");
+        // maximize
+        driver.manage().window().maximize();
         //click on the start button
         WebElement startBtn =driver.findElement(By.id("startButton"));
         startBtn.click();
@@ -24,7 +31,6 @@ public class Wait {
         String text= welcomeText.getText();
         System.out.println("the text is :"+text);
 
-        //implicit wait is going to wait until the element is found
-
+        //Text is empty after exploring DOM, because the element is already found before it can load onto the page.
     }
 }
