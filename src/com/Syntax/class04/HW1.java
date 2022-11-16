@@ -13,7 +13,7 @@ public class HW1 {
         Click on login button
         Then verify the message "Welcome Admin " is there on the top right corner */
 
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
         driver.manage().window().maximize();

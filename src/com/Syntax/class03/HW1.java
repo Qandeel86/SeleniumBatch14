@@ -14,7 +14,7 @@ public class HW1 {
          *quit the browser
          */
 
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.get("http://syntaxprojects.com/");
         driver.manage().window().maximize();

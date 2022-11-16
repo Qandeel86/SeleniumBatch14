@@ -16,7 +16,7 @@ public class HW3 {
           -write down whatever the reason you understand  of text being empty after exploring DOM   */
 
         // set the path to the driver to link it with our class    on mac u dont need .exe on windows u need .exe
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         // create a WebDriver instance
         WebDriver driver=new ChromeDriver();
         //go to https://syntaxprojects.com/dynamic-elements-loading.php

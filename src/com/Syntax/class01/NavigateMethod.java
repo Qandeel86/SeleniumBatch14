@@ -8,7 +8,7 @@ public class NavigateMethod {
         //goto google.com
         //goto fb.com
         //go back to google.com
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         //create the Webdriver instance
         WebDriver driver=new ChromeDriver();
         //goto google.com

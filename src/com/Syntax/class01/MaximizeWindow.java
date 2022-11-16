@@ -7,7 +7,7 @@ public class MaximizeWindow {
     public static void main(String[] args) {
         //goto google.com
         //maximize your window
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         //create instance of Webdriver
         WebDriver driver=new ChromeDriver();
         //goto google.com

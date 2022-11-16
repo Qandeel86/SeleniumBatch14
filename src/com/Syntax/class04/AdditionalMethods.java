@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AdditionalMethods {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         //goto syntaxProject.com simple-form-demo
         driver.get("https://syntaxprojects.com/basic-radiobutton-demo.php");

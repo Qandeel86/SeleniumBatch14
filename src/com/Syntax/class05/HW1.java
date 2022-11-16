@@ -13,7 +13,7 @@ public class HW1 {
           3.Fill out the whole form
           4.Take screenshot of filled out form manually and share in HW channel along with code*/
 
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.get("http://www.facebook.com");
         driver.manage().window().maximize();
